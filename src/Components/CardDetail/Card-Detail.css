@@ -1,0 +1,30 @@
+.card-btn {
+    background-color: rgba(0, 0, 255, 0.699);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+
+.card-btn1 {
+    margin: 20px;
+    background-color: rgba(8, 133, 25, 0.699);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+
+}
+
+.btn1 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-btn:hover {
+    background-color: orange;
+    width: 80px;
+}

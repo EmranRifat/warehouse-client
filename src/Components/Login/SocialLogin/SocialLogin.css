@@ -1,0 +1,19 @@
+.google {
+    width: 35px;
+}
+
+
+.btn {
+    border-radius: 50px;
+    border: 1px solid gray;
+
+}
+
+.btn-3 {
+    background-color: rgba(0, 0, 0, 0.829);
+    color: antiquewhite;
+    border-radius: 50px;
+    border: 1px solid rgb(27, 27, 27);
+
+
+}

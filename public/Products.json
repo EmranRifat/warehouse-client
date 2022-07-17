@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "Personal Photography",
+        "price": "150 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.pexels.com/photos/1193942/pexels-photo-1193942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 2,
+        "name": "Wedding Photography",
+        "price": "180 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://images.pexels.com/photos/758898/pexels-photo-758898.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 3,
+        "name": "Birthday Photography ",
+        "price": "100 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://media.istockphoto.com/photos/group-of-kids-celebrate-birthday-party-together-picture-id861129134?b=1&k=20&m=861129134&s=170667a&w=0&h=2DjnG-hPa8rnLouook4kNBSCfwuDPM1yVoyGYKlomEo="
+    },
+    {
+        "id": 4,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 5,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 5,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 5,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 5,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        "id": 6,
+        "name": "Products Photography",
+        "price": "300 $",
+        "supplier": "Micle paule",
+        "quantity": "120",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://images.pexels.com/photos/1367225/pexels-photo-1367225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+]

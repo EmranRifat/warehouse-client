@@ -1,0 +1,123 @@
+.img {
+    border-radius: 50%;
+    width: 400px;
+    height: 300px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.group {
+    background-color: rgb(185, 196, 192);
+}
+
+.client_section {
+    margin: 30px auto 0;
+    padding-top: 20px;
+    max-width: 850px;
+}
+
+
+.client_title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 400;
+    border: 1px dotted gray;
+    border-radius: 10px;
+
+
+}
+
+.client_phrase {
+    font-size: 20px;
+    margin-bottom: 45px;
+    color: orange;
+}
+
+.client_text {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+
+.client_content {
+    display: flex;
+    position: relative;
+    margin-bottom: 250px;
+}
+
+.comma {
+    font-size: 200px;
+    opacity: 20%;
+}
+
+.lower_comma {
+    transform: rotate(180deg);
+    margin-left: 130px;
+    position: absolute;
+    right: -95px;
+    bottom: -75px;
+}
+
+.upper_comma {
+    position: absolute;
+    left: -50px;
+    top: -90px;
+}
+
+.client_review {
+    display: flex;
+    padding: 30px;
+    max-width: 75%;
+    margin: 0 auto;
+    --webkit-box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 12px 27px 4px rgba(0, 0, 0, 0.55);
+    border-radius: 5px;
+    background-color: rgba(95, 158, 160, 0.497);
+    height: 260px;
+}
+
+.client_review:hover {
+    transition: all 0.8s ease 0s;
+    transform: scale(1.08);
+}
+
+.client_image {
+    margin-top: 5px;
+    width: 100%;
+    border-radius: 7px;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+.client_review_text {
+    margin-left: 18px;
+
+}
+
+.client_info {
+    margin-bottom: 5px;
+}
+
+.client_info .client_name {
+    font-weight: bold;
+    color: #fbad27;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+
+    .album {
+        grid-template-columns: repeat(1, 1fr);
+        display: flex;
+        display: grid;
+    }
+
+
+
+}
