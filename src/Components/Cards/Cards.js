@@ -9,7 +9,7 @@ const Cards = () => {
     const card2 = cards.slice(0, 3)
     // https://desolate-reef-26430.herokuapp.com/service
     useEffect(() => {
-        fetch('http://localhost:5000/service')
+        fetch('https://protected-shore-02566.herokuapp.com/service')
             .then(res => res.json())
             .then(data => setCards(data));
     }, []);

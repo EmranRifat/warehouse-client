@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./InventoryItem.css";
 
 const InventoryItem = (props) => {
@@ -7,7 +8,7 @@ const InventoryItem = (props) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure?");
     if (proceed) {
-      const url = `http://localhost:5000/service/${id}`;
+      const url = `https://protected-shore-02566.herokuapp.com/service/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -36,8 +37,11 @@ const InventoryItem = (props) => {
           <button onClick={() => handleDelete()} className="delever">
             Delivered
           </button>
+          <button className="delever"><Link to ={``}></Link></button>
+          
+          
 
-          {/* <Link onClick={() => naviagteServiceDetail(id)} href="" className="btn btn-primary book-btn">Book Now</Link> */}
+  {/* <Link onClick={() => naviagteServiceDetail(id)} href="" className="btn btn-primary book-btn">Book Now</Link>  */}
         </div>
       </div>
     </div>

@@ -10,14 +10,14 @@ const CardDetail = () => {
   console.log(service);
   const [count, setCount] = useState([]);
   useEffect(() => {
-    const url = `http://localhost:5000/service/${serviceId}`;
+    const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setService(data));
   }, [serviceId]);
 
   useEffect(() => {
-    const url = `http://localhost:5000/service/${serviceId}`;
+    const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
     fetch(url)
       .then((response) => response.json())
       .then((data) => setCount(data.quantity));
@@ -34,7 +34,7 @@ const CardDetail = () => {
     } else {
       const updatedInfo = { updatedQuentity };
       //send updated data in backend
-      const url = `http://localhost:5000/service/${serviceId}`;
+      const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -65,7 +65,7 @@ const CardDetail = () => {
     } else {
       const updatedInfo = { updatedQuentity };
       //send updated data in backend
-      const url = `http://localhost:5000/service/${serviceId}`;
+      const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
       fetch(url, {
         method: "PUT",
         headers: {
