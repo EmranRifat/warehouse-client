@@ -7,20 +7,14 @@ import "./Card-Detail.css";
 const CardDetail = () => {
   const { serviceId } = useParams();
   const [service, setService] = useState({});
-  console.log(service);
+  // console.log(service);
   const [count, setCount] = useState([]);
-  useEffect(() => {
-    const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setService(data));
-  }, [serviceId]);
 
   useEffect(() => {
-    const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
+    const url = `https://ware-house-server.vercel.app/service/${serviceId}`;
     fetch(url)
-      .then((response) => response.json())
-      .then((data) => setCount(data.quantity));
+      .then((res) => res.json())
+      .then((data) => setService(data));
   }, [serviceId]);
 
   const handleSingleUniteDelevery = (event) => {
@@ -34,7 +28,7 @@ const CardDetail = () => {
     } else {
       const updatedInfo = { updatedQuentity };
       //send updated data in backend
-      const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
+      const url = `https://ware-house-server.vercel.app/service/${serviceId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -45,7 +39,7 @@ const CardDetail = () => {
         .then((response) => response.json())
         .then((data) => {
           console.log("success", updatedInfo);
-          console.log(service);
+          // console.log(service);
 
           alert("Information updated successfully");
         });
@@ -65,7 +59,7 @@ const CardDetail = () => {
     } else {
       const updatedInfo = { updatedQuentity };
       //send updated data in backend
-      const url = `https://protected-shore-02566.herokuapp.com/service/${serviceId}`;
+      const url = `https://ware-house-server.vercel.app/service/${serviceId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -75,10 +69,10 @@ const CardDetail = () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("success", updatedInfo);
-          console.log(service);
+          // console.log("success", updatedInfo);
+          // console.log(service);
           alert("Informatin updated successfully");
-          console.log(service);
+          // console.log(service);
           event.target.reset();
         });
     }
@@ -90,7 +84,7 @@ const CardDetail = () => {
     const updatedQuentity = count + inpvalue;
     setCount(updatedQuentity);
 
-    console.log(typeof inpvalue);
+    // console.log(typeof inpvalue);
 
     if (count < event.target.restocked.value || updatedQuentity < 0) {
       alert("You mighthave mistaken");
@@ -98,7 +92,7 @@ const CardDetail = () => {
     } else {
       const updatedInfo = { updatedQuentity };
       //send updated data in backend
-      const url = `https://desolate-reef-26430.herokuapp.com/service/${serviceId}`;
+      const url = `https://ware-house-server.vercel.app/service/${serviceId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -108,10 +102,9 @@ const CardDetail = () => {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("success", updatedInfo);
-          console.log(service);
+          // console.log("success", updatedInfo);
+          // console.log(service);
           alert("Informatin updated successfully");
-          console.log(service);
           event.target.reset();
         });
     }

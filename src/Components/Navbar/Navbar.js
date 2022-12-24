@@ -8,7 +8,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
-
   const handleSignOut = () => {
     signOut(auth);
     console.log(" end");
@@ -19,7 +18,6 @@ const Navbar = () => {
     <div>
       <nav
         style={{ padding: "5px" }}
-        collapseOnSelect
         expand="lg"
         bg="dark"
         sticky="top"
@@ -84,7 +82,7 @@ const Navbar = () => {
                 className="btn btn-link text-black text-decoration-none"
                 onClick={handleSignOut}
               >
-                Sign out{" "}
+                Sign out
               </button>
             ) : (
               <Link className="nav-link" to="login">

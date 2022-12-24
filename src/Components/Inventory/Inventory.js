@@ -4,16 +4,15 @@ import InventoryItem from '../InventoryItem/InventoryItem';
 import './Inventory.css'
 
 const Inventory = () => {
-    const [items, setItems] = useProducts();
-
+    const [items] = useProducts();
     return (
         <div>
-            <h2 className='mb-4 d-flex text-align-center justify-content-center  fw-bold'>Inventory All Products..{items.length}</h2>
+            <h2 className='mb-4 d-flex text-align-center justify-content-center  fw-bold'>Inventory All Products: {items.length}</h2>
             <div className='service'>
 
                 {
-                    items.map(item => <InventoryItem
-                        key={item.id}
+                    items.map(item =>  <InventoryItem
+                        key={item._id}
                         item={item}
                     ></InventoryItem>)
                 }

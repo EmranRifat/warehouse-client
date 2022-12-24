@@ -1,24 +1,33 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./InventoryItem.css";
 
 const InventoryItem = (props) => {
   const { name, img, _id, price, description, quantity, supplier } = props.item;
+  const [items, setItems] = useState([]);
+
+  const handleNavigate = () => {
+    alert.success = "Confirm";
+  };
 
   const handleDelete = (id) => {
-    const proceed = window.confirm("Are you sure?");
+    const proceed = window.confirm("Are you sure want to remove this..!");
     if (proceed) {
-      const url = `https://protected-shore-02566.herokuapp.com/service/${id}`;
+      const url = `https://ware-house-server.vercel.app/service/${id}`;
       fetch(url, {
         method: "DELETE",
       })
         .then((res) => res.json())
-        .then((data) => console.log(data));
+        .then((data) => {
+          if (data.deletedCount > 0) {
+            const remaining = items.filter((item) => item._id !== id);
+            setItems(remaining);
+          }
+        });
     }
   };
   return (
     <div className=" col-sm-12 col-lg-4 col-md-6">
-      <div className="card " style={{ width: "18rem"  }}>
+      <div className="card " style={{ width: "18rem" }}>
         <img
           className="w-100"
           style={{ height: "12rem" }}
@@ -34,14 +43,16 @@ const InventoryItem = (props) => {
           </p>
           {/* <p>Supplier: {supplier}</p> */}
           <p>Quantity: {quantity}</p>
-          <button onClick={() => handleDelete()} className="delever">
-            Delivered
-          </button>
-          <button className="delever"><Link to ={``}></Link></button>
-          
-          
 
-  {/* <Link onClick={() => naviagteServiceDetail(id)} href="" className="btn btn-primary book-btn">Book Now</Link>  */}
+          <button onClick={() => handleDelete(_id)} className="delever">
+            Delete
+          </button>
+          <button className="delever " onClick={handleNavigate()}>
+            {" "}
+            Buy now
+          </button>
+
+          {/* <Link onClick={() => naviagteServiceDetail(id)} href="" className="btn btn-primary book-btn">Book Now</Link>  */}
         </div>
       </div>
     </div>
